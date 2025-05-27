@@ -1,6 +1,6 @@
 {
   "name": "vrm-mixamo-retarget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A lightweight library for retargeting Mixamo FBX animations to VRM avatars using Three.js",
   "main": "dist/index.js",

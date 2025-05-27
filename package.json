@@ -1,6 +1,7 @@
 {
-  "name": "vrm-animation-retargeting",
-  "version": "1.0.0",
+  "name": "vrm-mixamo-retarget",
+  "version": "1.0.1",
+  "type": "module",
   "description": "A lightweight library for retargeting Mixamo FBX animations to VRM avatars using Three.js",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -22,24 +23,17 @@
     "fbx",
     "avatar"
   ],
-  "author": "Your Name",
+  "author": "saori",
   "license": "MIT",
   "peerDependencies": {
-    "three": ">=0.150.0",
-    "@pixiv/three-vrm": ">=2.0.0"
+    "@pixiv/three-vrm": ">=2.0.0",
+    "three": ">=0.150.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/three": "^0.160.0",
     "rollup": "^4.9.0",
+    "tslib": "^2.8.1",
     "typescript": "^5.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/vrm-animation-retargeting.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yourusername/vrm-animation-retargeting/issues"
-  },
-  "homepage": "https://github.com/yourusername/vrm-animation-retargeting#readme"
-} 
+  }
+}

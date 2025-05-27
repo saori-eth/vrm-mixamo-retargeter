@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+// @ts-ignore - FBXLoader types are not available in @types/three
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
 import type { VRM, VRMHumanBoneName } from '@pixiv/three-vrm'
 

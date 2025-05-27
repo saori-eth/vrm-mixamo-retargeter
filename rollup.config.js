@@ -9,7 +9,7 @@ export default [
       format: 'es',
       sourcemap: true
     },
-    external: ['three', '@pixiv/three-vrm'],
+    external: ['three', '@pixiv/three-vrm', 'three/addons/loaders/FBXLoader.js'],
     plugins: [
       typescript({
         tsconfig: './tsconfig.json',
@@ -26,11 +26,12 @@ export default [
       format: 'cjs',
       sourcemap: true
     },
-    external: ['three', '@pixiv/three-vrm'],
+    external: ['three', '@pixiv/three-vrm', 'three/addons/loaders/FBXLoader.js'],
     plugins: [
       typescript({
         tsconfig: './tsconfig.json',
-        declaration: false
+        declaration: false,
+        declarationMap: false
       })
     ]
   }

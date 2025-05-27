@@ -9,6 +9,14 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saori-eth/vrm-mixamo-retargeter.git"
+  },
+  "homepage": "https://github.com/saori-eth/vrm-mixamo-retargeter#readme",
+  "bugs": {
+    "url": "https://github.com/saori-eth/vrm-mixamo-retargeter/issues"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",

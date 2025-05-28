@@ -2,9 +2,9 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
 import { VRMLoaderPlugin } from '@pixiv/three-vrm'
-import { retargetAnimation, retargetAnimationFromUrl } from 'vrm-animation-retargeting'
+import { retargetAnimation, retargetAnimationFromUrl } from 'vrm-mixamo-retarget'
 
-// Basic example of using vrm-animation-retargeting
+// Basic example of using vrm-mixamo-retarget
 async function main() {
   // Set up Three.js scene
   const scene = new THREE.Scene()

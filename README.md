@@ -15,7 +15,7 @@ A lightweight library for retargeting Mixamo FBX animations to VRM avatars using
 ## Installation
 
 ```bash
-npm install vrm-animation-retargeting
+npm install vrm-mixamo-retarget
 ```
 
 ### Peer Dependencies
@@ -31,7 +31,7 @@ npm install three @pixiv/three-vrm
 ### Using FBX Objects (Recommended)
 
 ```javascript
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 import { VRMLoaderPlugin } from '@pixiv/three-vrm'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
@@ -60,7 +60,7 @@ if (animationClip) {
 ### Using URLs (Convenience Function)
 
 ```javascript
-import { retargetAnimationFromUrl } from 'vrm-animation-retargeting'
+import { retargetAnimationFromUrl } from 'vrm-mixamo-retarget'
 
 // This is equivalent to the above but loads the FBX for you
 const animationClip = await retargetAnimationFromUrl(
@@ -74,7 +74,7 @@ const animationClip = await retargetAnimationFromUrl(
 ### Custom Configuration
 
 ```javascript
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 
 const animationClip = retargetAnimation(
   fbxAsset,
@@ -101,7 +101,7 @@ import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
 import { VRMLoaderPlugin } from '@pixiv/three-vrm'
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 import { useEffect, useState } from 'react'
 
 function AnimatedAvatar() {
@@ -135,7 +135,7 @@ function AnimatedAvatar() {
 ### Batch Processing Multiple Animations
 
 ```javascript
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
 
 const animationUrls = {
@@ -202,7 +202,7 @@ interface RetargetingOptions {
 The default bone mapping from Mixamo skeleton names to VRM humanoid bone names. You can import this to see all supported bones or extend it with custom mappings.
 
 ```javascript
-import { mixamoVRMRigMap } from 'vrm-animation-retargeting'
+import { mixamoVRMRigMap } from 'vrm-mixamo-retarget'
 console.log(mixamoVRMRigMap)
 ```
 

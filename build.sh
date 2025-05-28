@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Simple build script for vrm-animation-retargeting library
+# Simple build script for vrm-mixamo-retarget library
 
 echo "Building VRM Animation Retargeting library..."
 

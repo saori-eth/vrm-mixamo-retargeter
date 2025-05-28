@@ -153,7 +153,7 @@ const clips = await Promise.all(
 ## File Structure
 
 ```
-lib/vrm-animation-retargeting/
+lib/vrm-mixamo-retarget/
 ├── src/index.ts              # Main library code
 ├── dist/                     # Built library files
 ├── examples/                 # Usage examples
@@ -170,13 +170,13 @@ lib/vrm-animation-retargeting/
 
 1. **Build the library:**
    ```bash
-   cd lib/vrm-animation-retargeting
+   cd lib/vrm-mixamo-retarget
    npm install && npm run build
    ```
 
 2. **Use in your project:**
    ```javascript
-   import { retargetAnimation } from 'vrm-animation-retargeting'
+   import { retargetAnimation } from 'vrm-mixamo-retarget'
    const clip = await retargetAnimation('animation.fbx', vrmModel)
    ```
 

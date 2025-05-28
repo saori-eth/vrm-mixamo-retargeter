@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
 import { VRMLoaderPlugin } from '@pixiv/three-vrm'
 import { useAnimations } from '@react-three/drei'
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 
 // Component for animated VRM avatar
 function AnimatedAvatar({ vrmUrl, animationUrl }) {
@@ -88,7 +88,7 @@ function AnimatedAvatarFromUrl({ vrmUrl, animationUrl }) {
     if (!vrm || !animationUrl) return
 
     // Using the convenience function
-    import('vrm-animation-retargeting').then(({ retargetAnimationFromUrl }) => {
+    import('vrm-mixamo-retarget').then(({ retargetAnimationFromUrl }) => {
       retargetAnimationFromUrl(animationUrl, vrm, {
         logWarnings: true
       }).then((clip) => {

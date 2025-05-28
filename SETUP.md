@@ -7,7 +7,7 @@ This guide will help you set up and use the VRM Animation Retargeting library.
 ### 1. Build the Library
 
 ```bash
-cd lib/vrm-animation-retargeting
+cd lib/vrm-mixamo-retarget
 npm install
 npm run build
 ```
@@ -33,17 +33,17 @@ const { retargetAnimation } = require('./path/to/dist/index.js')
 #### Option B: Install as local package
 From your project root:
 ```bash
-npm install ./lib/vrm-animation-retargeting
+npm install ./lib/vrm-mixamo-retarget
 ```
 
 Then import normally:
 ```javascript
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 ```
 
 #### Option C: Publish to npm (for distribution)
 ```bash
-cd lib/vrm-animation-retargeting
+cd lib/vrm-mixamo-retarget
 npm publish
 ```
 
@@ -52,7 +52,7 @@ npm publish
 ### Basic Usage (Recommended)
 
 ```javascript
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 import { VRMLoaderPlugin } from '@pixiv/three-vrm'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
@@ -80,7 +80,7 @@ if (clip) {
 ### Using URL Convenience Function
 
 ```javascript
-import { retargetAnimationFromUrl } from 'vrm-animation-retargeting'
+import { retargetAnimationFromUrl } from 'vrm-mixamo-retarget'
 
 // This loads the FBX for you
 const clip = await retargetAnimationFromUrl('animation.fbx', vrm)
@@ -101,7 +101,7 @@ const clip = retargetAnimation(fbxAsset, vrm, {
 ### React Three Fiber
 
 ```jsx
-import { retargetAnimation } from 'vrm-animation-retargeting'
+import { retargetAnimation } from 'vrm-mixamo-retarget'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js'
@@ -159,7 +159,7 @@ Convenience function that loads FBX from URL and retargets it.
 Default bone mapping from Mixamo to VRM bones. Can be imported and extended:
 
 ```javascript
-import { mixamoVRMRigMap } from 'vrm-animation-retargeting'
+import { mixamoVRMRigMap } from 'vrm-mixamo-retarget'
 ```
 
 ## Why Use FBX Objects?
@@ -195,7 +195,7 @@ const clip = retargetAnimation(fbxAsset, vrm, { logWarnings: true })
 ## File Structure
 
 ```
-lib/vrm-animation-retargeting/
+lib/vrm-mixamo-retarget/
 ├── src/
 │   └── index.ts          # Main library code
 ├── dist/                 # Built files (after npm run build)
